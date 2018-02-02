@@ -5,7 +5,7 @@ Used to control a car with your thoughts.
 ## Modules needed
 *	pyautogui		( For keypressed test )
 *	keyboard		( Reading from keyboard )
-*	pyserial			( Arduino connection )
+*	pyserial		( Arduino connection )
 
 ```
 pip install pyautogui
@@ -19,10 +19,9 @@ pip install pyserial
 3. Open terminal and execute test_keyboard_read.py
 
 * test_random_key.py simulates Emotiv by sending keypressed event every 3 seconds.
-* test_keyboard_read.py listens for keypressed event:
-	* If keypressed == 'k', sends signal to arduino.
-	* If keypressed == 'q', exits program.
+* test_keyboard_read.py listens for keypressed event
 
 ## Program
 1. cd into proyect directory
 2. Open terminal and run main.py
+3. Prepare Emotiv
