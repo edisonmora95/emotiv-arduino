@@ -13,15 +13,20 @@ pip install keyboard
 pip install pyserial	
 ```
 
-## Tests
-1. cd into proyect directory
-2. Open terminal and execute test_random_key.py
-3. Open terminal and execute test_keyboard_read.py
-
-* test_random_key.py simulates Emotiv by sending keypressed event every 3 seconds.
-* test_keyboard_read.py listens for keypressed event
-
 ## Program
-1. cd into proyect directory
-2. Open terminal and run main.py
-3. Prepare Emotiv
+1. Connect arduino
+2. Change port variable to the one the HC05 module is using in main.py
+3. Open terminal
+4. cd into proyect directory
+5. Run main.py
+6. Prepare Emotiv
+7. Connect the Emotiv to the console running main.py
+
+If you want to test it without the Emotiv, in the console running main.py you can type the following:
+```
+w -> to move forward
+s -> to move backwards
+d -> to move to the right
+a -> to move to the left
+q -> to quit
+```
