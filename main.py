@@ -1,10 +1,11 @@
 import keyboard  # Using module keyboard
 import serial    # Conecting with Arduino
 
-PORT     = 'COM6'  # Remember to change the port to the one the HC05 is using
+PORT     = 'COM8'  # Remember to change the port to the one the HC05 is using
 arduino  = serial.Serial(PORT, 9600)
 last_key = 'q'
 
+print('Comenzando...')
 # Beginning of the loop, waiting for keypressed event
 while True:
   try: # Used try so that if user pressed other than the given keys error will not be shown
